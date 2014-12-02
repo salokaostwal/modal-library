@@ -1,0 +1,40 @@
+#cal_body{
+	border:1px solid #ccc;
+	border-radius:5px;
+	background:#999;
+	width:21%;
+	padding:10px
+}
+
+#screen{
+	background:#fff;
+	border:1px solid #333;
+	height:30px;
+	width:100%;
+	margin-bottom:20px;
+	color:#000;
+}
+
+input{
+	border-radius: 5px;
+	padding: 5px 10px;
+	width: 40px;
+	border: none;
+	margin: 5px;
+	box-shadow: 2px 2px #666;
+	outline:none;
+	cursor:pointer
+}
+
+input:active {
+	box-shadow: 0px 0px #DBDBDB;
+	top: 4px;
+}
+
+
+
+
+
+
+
+
