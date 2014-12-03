@@ -1,0 +1,29 @@
+body {
+  background-color: #f45;
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+}
+button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 7px;
+}
+.body-wrap {
+  padding-top: 48vh;
+}
+.modal-wrap {
+  position: fixed;
+  z-index: 12;                //  > than the body overlay's z-index
+  background-color: #ddd;
+  width: 50vw;
+  height: 35vh;
+  top: calc(35% / 2);
+  left: calc(50% / 2);
+}
