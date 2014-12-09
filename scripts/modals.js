@@ -10,7 +10,6 @@ var modal_maker = (function() {
     modalstring.innerHTML = "<button class='modal-close-btn'>Close</button>";
     modalstring.classList.add('modal-wrap');
 
-
     var appendToBody = function(args) {
         document.body.appendChild(args);
     };
