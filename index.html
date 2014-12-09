@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Modal with vanilla JS</title>
     <link rel="stylesheet" href="styles/main.css">
+
 </head>
 
 <body>
@@ -13,11 +14,12 @@
         <button class="btn btn-modal">Invoke modal</button>
     </div>
     <div class="modal-area"></div>
-
     <script src="scripts/modals.js"></script>
     <script>
       var modal_btn = document.querySelector('.btn-modal');
+      var modal_area = document.querySelector('.modal-area');
       modal_btn.addEventListener('click', modal_maker.launch);
+      modal_area.addEventListener('click', modal_maker.remove);
     </script>
 </body>
 
