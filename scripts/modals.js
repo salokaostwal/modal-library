@@ -4,7 +4,7 @@ var modal_maker = (function() {
     var modalstring = document.createElement('div'),
         modal_overlay = document.createElement('div'),
         text_content = document.createElement('p'),
-        modal_container = document.querySelector('.modal-area');
+        body_wrap = document.querySelector('.body-wrap');
 
     modal_overlay.classList.add('modal-overlay');
     modalstring.classList.add('modal-wrap');
@@ -17,16 +17,15 @@ var modal_maker = (function() {
         document.body.removeChild(args);
     };
     var invokeModal = function() {
-        modal_container.appendChild(modalstring);
-        modalstring.classList.add('init');
-        appendToBody(modal_overlay);
+        body_wrap.insertBefore(modalstring, this);
+        body_wrap.insertBefore(modal_overlay, this);
         text_content.textContent = this.dataset.modalText;
         modalstring.appendChild(text_content);
     };
     var closeModal = function(evt) {
         if (evt.target.classList.contains('modal-close-btn')) {
-            modal_container.removeChild(modalstring);
-            removeNode(modal_overlay);
+            body_wrap.removeChild(modalstring);
+            body_wrap.removeChild(modal_overlay);
         }
     };
     return {

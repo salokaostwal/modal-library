@@ -8,17 +8,16 @@
 </head>
 
 <body>
+
     <div class="body-wrap">
         <button class="btn btn-modal" data-modal-text="some text in the modal">Launch it !</button>
     </div>
-    <div class="modal-area clearfix"></div>
+
     <script src="scripts/modals.js"></script>
     <script>
-      var modal_btn = document.querySelector('.btn-modal'),
-          modal_area = document.querySelector('.modal-area');
+      var modal_btn = document.querySelector('.btn-modal');
       modal_btn.addEventListener('click', modal_maker.launch);
-      modal_area.addEventListener('click', modal_maker.remove);
+      document.body.addEventListener('click', modal_maker.remove);
     </script>
 </body>
-
 </html>
