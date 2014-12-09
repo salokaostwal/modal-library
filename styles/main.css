@@ -27,3 +27,8 @@ button {
   top: calc(35% / 2);
   left: calc(50% / 2);
 }
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
