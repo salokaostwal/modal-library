@@ -2,13 +2,13 @@ var modal_maker = (function() {
     'use strict';
 
     var modalstring = document.createElement('div'),
-        modal_container = document.querySelector('.modal-area'),
         modal_overlay = document.createElement('div'),
-        text_content = document.createElement('div');
+        text_content = document.createElement('p'),
+        modal_container = document.querySelector('.modal-area');
 
     modal_overlay.classList.add('modal-overlay');
-    modalstring.innerHTML = "<button class='modal-close-btn'>Close</button>";
     modalstring.classList.add('modal-wrap');
+    modalstring.innerHTML = "<button class='modal-close-btn'>Close</button>";
 
     var appendToBody = function(args) {
         document.body.appendChild(args);
