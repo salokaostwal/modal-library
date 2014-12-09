@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modal</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <a id="create" href="#">Create overlay</a>
+  <script type="text/javascript" src="modal.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+
+      var body    = document.body,
+          clicker = body.querySelector('#create'),
+          overlay = document.createElement('div');
+          overlay.setAttribute('id', 'overlay');
+
+      clicker.addEventListener('click', function(event){
+        event.preventDefault();
+
+        // inserting before
+        document.body.insertBefore(overlay, this);
+
+      }, false);
+
+    }, false);
+  </script>
+</body>
+</html>
