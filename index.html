@@ -9,15 +9,14 @@
 </head>
 
 <body>
-    <div class="modal-overlay"></div>
     <div class="body-wrap">
-        <button class="btn btn-modal">Invoke modal</button>
+        <button class="btn btn-modal">Launch it !</button>
     </div>
     <div class="modal-area clearfix"></div>
     <script src="scripts/modals.js"></script>
     <script>
-      var modal_btn = document.querySelector('.btn-modal');
-      var modal_area = document.querySelector('.modal-area');
+      var modal_btn = document.querySelector('.btn-modal'),
+          modal_area = document.querySelector('.modal-area');
       modal_btn.addEventListener('click', modal_maker.launch);
       modal_area.addEventListener('click', modal_maker.remove);
     </script>

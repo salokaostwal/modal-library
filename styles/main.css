@@ -19,16 +19,27 @@ button {
   padding-top: 48vh;
 }
 .modal-wrap {
+  display: block;
   position: fixed;
-  z-index: 12;                //  > than the body overlay's z-index
-  background-color: #ddd;
+  z-index: 12;                /*  > than the body overlay's z-index */
+  background-color: SkyBlue;
   width: 50vw;
-  height: 35vh;
+  height: 55vh;
+  padding: 15px;
   top: calc(35% / 2);
   left: calc(50% / 2);
+  border-radius: 5px;
 }
 .clearfix:after {
   content: " ";
   display: table;
   clear: both;
+}
+.modal-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 11;
 }
