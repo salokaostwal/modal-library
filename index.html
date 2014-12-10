@@ -18,8 +18,16 @@
       clicker.addEventListener('click', function(event){
         event.preventDefault();
 
-        // inserting before
+        // inserting Overlay
         document.body.insertBefore(overlay, this);
+
+        // removing Overlay
+        overlay.addEventListener('click', function(event){
+          event.preventDefault();
+
+          document.body.removeChild(this);
+
+        }, false);
 
       }, false);
 
