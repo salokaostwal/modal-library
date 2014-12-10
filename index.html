@@ -21,13 +21,13 @@
         // inserting Overlay
         document.body.insertBefore(overlay, this);
 
-        // removing Overlay
-        overlay.addEventListener('click', function(event){
-          event.preventDefault();
+      }, false);
 
-          document.body.removeChild(this);
-
-        }, false);
+      // removing Overlay
+      overlay.addEventListener('click', function(event){
+        event.preventDefault();
+        
+        document.body.removeChild(this);
 
       }, false);
 
